@@ -45,7 +45,6 @@ sigout[pp:pp+N] += win*ifft(abs(spec2)*out)
 pp += H
 p += H*tscale
 
-
 #  write file to output, scaling it to original amp
 
 wavfile.write(sys.argv[3],sr,array(amp*sigout/max(sigout), dtype='int16'))
